@@ -1,0 +1,5 @@
+@mixin letras ($color , $sombra , $bg){
+	color: $color;
+	text-shadow: $sombra;
+	background-color: $bg;
+}

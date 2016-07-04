@@ -1,0 +1,40 @@
+.container-fluid{
+	h1{
+		text-align: center;
+		padding: 3%;
+		@include letras ($cl-lta , 1px 1px 2px black,$fondo);
+	}
+	.caja{
+		textarea{
+			width: 97%;
+			height:$fz;
+		}
+		.btn{
+			border:1px solid #4C4C4C;
+			height: $fz;
+		    width: 25%;
+		    margin: 3%;
+		    font-size: 17px;
+			@include letras ($cl-lta , 1px 1px 2px black, #845EB8);
+		}
+		.caja-lista{
+			.text-center{
+				ul{
+					margin: 1%;
+					width: 60%;
+					li{
+						margin-left: 36%;
+						margin-top:2%;
+    					margin-right: -23%;
+    					padding: 3%;
+						border:1.5px solid blue;
+						list-style: none;
+						.option{
+							float:left;
+						}
+					}
+				}
+			}
+		}
+	}
+}

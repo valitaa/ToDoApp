@@ -1,0 +1,32 @@
+.container-fluid h1 {
+  text-align: center;
+  padding: 3%;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  background-color: #26c6da; }
+.container-fluid .caja textarea {
+  width: 97%;
+  height: 60px; }
+.container-fluid .caja .btn {
+  border: 1px solid #4C4C4C;
+  height: 60px;
+  width: 25%;
+  margin: 3%;
+  font-size: 17px;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  background-color: #845EB8; }
+.container-fluid .caja .caja-lista .text-center ul {
+  margin: 1%;
+  width: 60%; }
+  .container-fluid .caja .caja-lista .text-center ul li {
+    margin-left: 36%;
+    margin-top: 2%;
+    margin-right: -23%;
+    padding: 3%;
+    border: 1.5px solid blue;
+    list-style: none; }
+    .container-fluid .caja .caja-lista .text-center ul li .option {
+      float: left; }
+
+/*# sourceMappingURL=main.css.map */
