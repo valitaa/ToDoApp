@@ -1,5 +1,6 @@
 var boton, lista, tarea, item, check, trash;
 boton = document.getElementById("ADD");
+console.log('holaaa');
 boton.addEventListener("click",function(){
 	tarea = document.getElementById("evento");
 	lista = document.createElement("li");
@@ -13,7 +14,7 @@ boton.addEventListener("click",function(){
 		check = document.createElement("input");
 		check.setAttribute("class", "option");
 		check.setAttribute("type", "checkbox");
-		check.setAttribute("onclick","tachar(this)");
+		check.setAttribute("onclick","borrar(this)");
 		lista.appendChild(check);
 		lista.appendChild(parrafo);
 		parrafo.setAttribute("class","parra");
@@ -25,15 +26,15 @@ boton.addEventListener("click",function(){
 		alert("Tiene que ingresar una tarea");
 	}
 })
-function tachar(element){
-	var p = document.getElementsByClassName("parra");
-	//console.log(p);
+function borrar(element){
+	p = element.parentNode.getElementsByClassName('parra')[0]
+	console.log(p);
 	if(element.checked == true){
 		var strike = p.innerText.strike("");
 		p.innerText = "";
 		p.innerHTML = strike;
 	}
 	else{
-		p.innerText.remove("");
+		check.innerText.remove("");
 	}
 }
